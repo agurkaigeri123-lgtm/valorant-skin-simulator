@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VALORANT Skin Collection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">V<span>ALORANT</span></div>
+      <p class="side-label">COLLECTION</p>
+      <button class="nav active" data-category="All">◈ All Skins</button>
+      <button class="nav" data-category="Rifle">▰ Rifles</button>
+      <button class="nav" data-category="SMG">▰ SMGs</button>
+      <button class="nav" data-category="Sniper">▰ Snipers</button>
+      <button class="nav" data-category="Sidearm">▰ Sidearms</button>
+      <button class="nav" data-category="Shotgun">▰ Shotguns</button>
+      <button class="nav" data-category="Melee">⚔ Melee</button>
+      <div class="sidebar-bottom">
+        <p>SKIN SIMULATOR</p>
+        <span>Community collection</span>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header>
+        <div>
+          <p class="eyebrow">WEAPON COLLECTION</p>
+          <h1>SKIN <span>INVENTORY</span></h1>
+        </div>
+        <div class="header-right">
+          <span class="online-dot"></span> SIMULATOR ONLINE
+        </div>
+      </header>
+
+      <section class="stats">
+        <div class="stat"><small>TOTAL SKINS</small><strong id="totalCount">0</strong></div>
+        <div class="stat"><small>EQUIPPED</small><strong id="equippedCount">0</strong></div>
+        <div class="stat"><small>FAVORITES</small><strong id="favoriteCount">0</strong></div>
+      </section>
+
+      <section class="toolbar">
+        <input id="search" placeholder="Search skins or weapons...">
+        <select id="rarity">
+          <option value="All">All rarities</option>
+          <option>Exclusive</option>
+          <option>Ultra</option>
+          <option>Premium</option>
+          <option>Deluxe</option>
+          <option>Select</option>
+        </select>
+        <button id="favoritesOnly">♡ Favorites</button>
+      </section>
+
+      <section class="inventory-header">
+        <h2>AVAILABLE SKINS</h2>
+        <span id="resultCount">0 RESULTS</span>
+      </section>
+
+      <section id="skinGrid" class="skin-grid"></section>
+
+      <footer>
+        VALORANT SKIN COLLECTION SIMULATOR
+        <span>NOT CONNECTED TO THE GAME</span>
+      </footer>
+    </main>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeModal" class="close">✕</button>
+      <p class="eyebrow">WEAPON PREVIEW</p>
+      <div id="modalIcon" class="modal-icon">◈</div>
+      <h2 id="modalName">Skin Name</h2>
+      <p id="modalWeapon">Weapon</p>
+      <p id="modalRarity">Rarity</p>
+      <button id="modalEquip" class="equip-button">EQUIP SKIN</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
